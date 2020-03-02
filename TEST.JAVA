@@ -20,36 +20,7 @@ import org.drools.core.spi.Evaluator;
 import org.drools.core.spi.FieldValue;
 import org.drools.core.spi.InternalReadAccessor;
  
-/**
- * Custom drools Operator for "equalsIgnoreCase" and "inEqualsIgnoreCase". Also for negation of above given operators.
- * 
- * <br>
- * Example:<br>
- * when
- *      ${attribueValue} equalsIgnoreCase "INPUT"
- * then
- *      done;
- * end
- * 
- * <br>
- * <br> 
- * 
- * when
- *     ${attributeValue} inEqualsIgnoreCase "('INPUT1', 'INPUT2')"
- * then
- *      done;
- * end
- * 
- * <br>
- * <br>
- * 
- * when
- *   ${attributeValue} containsIgnoreCase "input"
- * then
- *   done;
- * end
- *
- */
+
 public class StringIgnoreCaseEvaluatorDefinition implements EvaluatorDefinition {
  
     private static final Logger logger = LogManager.getLogger(StringIgnoreCaseEvaluatorDefinition.class);
